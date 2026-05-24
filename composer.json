@@ -1,8 +1,9 @@
 {
     "name": "initphp/cli-table",
-    "description": "PHP CLI Table Generator",
+    "description": "PHP CLI Table Generator (DEPRECATED — merged into initphp/console:^2.1)",
     "type": "library",
     "license": "MIT",
+    "abandoned": "initphp/console",
     "autoload": {
         "psr-4": {
             "InitPHP\\CLITable\\": "src/"

@@ -1,5 +1,36 @@
 # InitPHP CLI Table Generator
 
+> ## ⚠️ DEPRECATED — Use [`initphp/console`](https://github.com/InitPHP/Console) instead
+>
+> As part of the InitPHP package consolidation, **this package has been merged into [`initphp/console`](https://github.com/InitPHP/Console) starting with version 2.1.** The consolidated package ships an identical table renderer under `\InitPHP\Console\Utils\Table` plus the rest of the Console toolkit (Application, Command, Input, Output, Question).
+>
+> This repository is kept read-only for historical reference. **No further updates will be released.**
+>
+> ### Migration
+>
+> 1. Update your `composer.json`:
+>
+>    ```diff
+>    - "initphp/cli-table": "^1.0",
+>    + "initphp/console": "^2.1"
+>    ```
+>
+> 2. Your existing `use InitPHP\CLITable\Table;` imports keep working — `initphp/console:^2.1` ships a `class_alias` that aliases the old FQCN to the canonical `\InitPHP\Console\Utils\Table`. **No source changes required.**
+>
+> 3. When you next touch the code, prefer the new canonical namespace:
+>
+>    ```php
+>    // Before
+>    use InitPHP\CLITable\Table;
+>
+>    // After
+>    use InitPHP\Console\Utils\Table;
+>    ```
+>
+> Composer declares a `replace` from `initphp/console:^2.1` to this package, so the two will not be installed side-by-side.
+
+---
+
 This library allows you to create nice looking tables in the CLI interface with PHP.
 
 _**Note** : Not required, but the **MB_String** extension is highly recommended._
